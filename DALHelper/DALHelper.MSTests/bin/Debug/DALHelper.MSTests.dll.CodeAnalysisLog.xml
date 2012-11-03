@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests\bin\Debug\DALHelper.MSTests.dll">
+   <Modules>
+    <Module Name="dalhelper.mstests.dll">
+     <Namespaces>
+      <Namespace Name="DALHelper.MSTests">
+       <Types>
+        <Type Name="DBDataHelperMSTestsUnitBase" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'DBDataHelperMSTestsUnitBase' because it creates members of the following IDisposable types: 'DBDataHelper'. If 'DBDataHelperMSTestsUnitBase' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="DBDataHelperMSTestsUnitMethods" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ExecSQL_NullSQLStatementProvided_ThrowArgumentNullException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="24">'DBDataHelperMSTestsUnitMethods.ExecSQL_NullSQLStatementProvided_ThrowArgumentNullException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecSQL_ZeroLengthSQLStatementProvided_ThrowArgumentException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="38">'DBDataHelperMSTestsUnitMethods.ExecSQL_ZeroLengthSQLStatementProvided_ThrowArgumentException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataReader_NullSQLStatementProvided_ThrowArgumentNullException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="136">'DBDataHelperMSTestsUnitMethods.GetDataReader_NullSQLStatementProvided_ThrowArgumentNullException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataReader_ZeroLengthSQLStatementProvided_ThrowArgumentException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="150">'DBDataHelperMSTestsUnitMethods.GetDataReader_ZeroLengthSQLStatementProvided_ThrowArgumentException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataSet_NullSQLStatementProvided_ThrowArgumentNullException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="164">'DBDataHelperMSTestsUnitMethods.GetDataSet_NullSQLStatementProvided_ThrowArgumentNullException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataSet_ZeroLengthSQLStatementProvided_ThrowArgumentException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="178">'DBDataHelperMSTestsUnitMethods.GetDataSet_ZeroLengthSQLStatementProvided_ThrowArgumentException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataTable_NullSQLStatementProvided_ThrowArgumentNullException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="80">'DBDataHelperMSTestsUnitMethods.GetDataTable_NullSQLStatementProvided_ThrowArgumentNullException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataTable_ZeroLengthSQLStatementProvided_ThrowArgumentException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="94">'DBDataHelperMSTestsUnitMethods.GetDataTable_ZeroLengthSQLStatementProvided_ThrowArgumentException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataView_NullSQLStatementProvided_ThrowArgumentNullException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="108">'DBDataHelperMSTestsUnitMethods.GetDataView_NullSQLStatementProvided_ThrowArgumentNullException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDataView_ZeroLengthSQLStatementProvided_ThrowArgumentException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="122">'DBDataHelperMSTestsUnitMethods.GetDataView_ZeroLengthSQLStatementProvided_ThrowArgumentException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRowsAffected_NullSQLStatementProvided_ThrowArgumentNullException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="52">'DBDataHelperMSTestsUnitMethods.GetRowsAffected_NullSQLStatementProvided_ThrowArgumentNullException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRowsAffected_ZeroLengthSQLStatementProvided_ThrowArgumentException()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2012-11-03 19:33:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Parakh\Desktop\DALHelper\DALHelper.MSTests" File="DBDataHelper.MSTests.Unit.Methods.cs" Line="66">'DBDataHelperMSTestsUnitMethods.GetRowsAffected_ZeroLengthSQLStatementProvided_ThrowArgumentException()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Rethrow to preserve stack details</Name>
+   <Description>Use the IL rethrow instruction to preserve original stack details when re-raising a caught exception.</Description>
+   <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="DependsOnFix">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}. If {0} has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DALHelper</name>
+    </assembly>
+    <members>
+        <member name="T:DALHelper.DBDataHelper">
+            <summary>
+            The class houses the methods that can be used to pull and push data into 
+            a SQL Server database.
+            </summary>
+        </member>
+        <member name="F:DALHelper.DBDataHelper.disposed">
+            <summary>
+            The bool type disposed field is used to denote whether the user handled 
+            the object of DBDataHelper class for disposal, or whether the Garbage Collector
+            handled the disposal.
+            </summary>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.ConnectToDB">
+            <summary>
+            ConnectToDB method is used to connect to the database with the help 
+            of the ConnectionString property.
+            </summary>
+            <returns>Returns a open connection to the database.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.InitializeCommand(System.String,DALHelper.SQLTextType,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            The GetCommand method is used by public facing method(s) of the helper library.
+            </summary>
+            <param name="sqlText">The SQL query/stored Procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <param name="parameterCollection">The collection of parameters that the sql query/stored procedure
+            requires in order to successfully execute.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.ExecSQL(System.String,DALHelper.SQLTextType,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a given SQL query or stored procedure.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <param name="parameterCollection">The collection of parameters that the sql query/ stored procedure
+            requires in order to successfully execute.</param>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.ExecSQL(System.String,DALHelper.SQLTextType)">
+            <summary>
+            Executes a given SQL query or stored procedure.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetRowsAffected(System.String,DALHelper.SQLTextType,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the total number of rows affected.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <param name="parameterCollection">The collection of parameters that the sql query/ stored procedure
+            requires in order to successfully execute.</param>
+            <returns>Returns the total number of rows affected.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetRowsAffected(System.String,DALHelper.SQLTextType)">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the total number of rows affected.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <returns>Returns the total number of rows affected.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetDataTable(System.String,DALHelper.SQLTextType,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the result set in a data table.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <param name="parameterCollection">The collection of parameters that the sql query/ stored procedure
+            requires in order to successfully execute.</param>
+            <returns>Returns a data table containing the result set.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetDataTable(System.String,DALHelper.SQLTextType)">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the result set in a data table.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <returns>Returns a data table containing the result set.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetDataView(System.String,DALHelper.SQLTextType,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the result set in a data view.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <param name="parameterCollection">The collection of parameters that the sql query/ stored procedure
+            requires in order to successfully execute.</param>
+            <returns>Returns a data view containing the result set.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetDataView(System.String,DALHelper.SQLTextType)">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the result set in a data view.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <returns>Returns a data view containing the result set.</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetDataSet(System.String,DALHelper.SQLTextType,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the result set(s) in a data set.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <param name="parameterCollection">The collection of parameters that the sql query/ stored procedure
+            requires in order to successfully execute.</param>
+            <returns>Returns a data set containing the result set(s).</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.GetDataSet(System.String,DALHelper.SQLTextType)">
+            <summary>
+            Executes a given SQL query/stored procedure and returns the result set(s) in a data set.
+            </summary>
+            <param name="sqlText">The SQL query/stored procedure passed in to be executed.</param>
+            <param name="sqlTextType">The enumerated value used to denote whether the passed in sql text is a 
+            sql query or a stored procedure.</param>
+            <returns>Returns a data set containing the result set(s).</returns>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.Dispose">
+            <summary>
+            Cleanas up the managed resources used by the library, namely 
+            the connection to the database and the command.
+            </summary>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.CleanUp(System.Boolean)">
+            <summary>
+            Executes the clean up procedure for public method Dispose and 
+            for finalizer of the class. If passed true as the parameter, then performs 
+            the clean up of both managed and unmanaged resources. If passed false, then
+            it means that garbage collector called up the finalizer and only the unmanaged
+            resources need clean up.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:DALHelper.DBDataHelper.Finalize">
+            <summary>
+            The finalizer that will be activated by the garbage collector
+            in the event the user fails to properly dispose off the object.
+            </summary>
+        </member>
+        <member name="P:DALHelper.DBDataHelper.Command">
+            <summary>
+            The Command property of is used internally by methods in the library.
+            </summary>
+        </member>
+        <member name="P:DALHelper.DBDataHelper.Connection">
+            <summary>
+            The Connection property is used internally by methods in the library.
+            </summary>
+        </member>
+        <member name="P:DALHelper.DBDataHelper.DataTable">
+            <summary>
+            DataTable that can be publicly read, but only privately set.
+            Used in methods that return data table.
+            /// </summary>
+        </member>
+        <member name="P:DALHelper.DBDataHelper.DataSet">
+            <summary>
+            DataSet that can be publicly read, but only privately set.
+            Used in methods that return dataset.
+            </summary>
+        </member>
+        <member name="P:DALHelper.DBDataHelper.ConnectionString">
+            <summary>
+            Gets and sets the connection that is used to connect to the database. 
+            Implementation of dependency injection via property injection.
+            </summary>
+        </member>
+        <member name="T:DALHelper.SQLTextType">
+            <summary>
+            The enum is used to suggest whether the passed sql text is a 
+            SQL query or a stored procedure.
+            </summary>
+        </member>
+        <member name="F:DALHelper.SQLTextType.Query">
+            <summary>
+            Signifies that passed sql text is an ad hoc SQL query.
+            </summary>
+        </member>
+        <member name="F:DALHelper.SQLTextType.Stored_Proc">
+            <summary>
+            Signifies that passed sql text is a stored procedure.
+            </summary>
+        </member>
+    </members>
+</doc>
