@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DALHelper;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 /*This base class does the work of setting up the connection string and 
  * initializing an object of the DBDataHelper class. The connection string
@@ -23,7 +18,7 @@ namespace DALHelper.MSTests
         [TestInitialize]
         public void TestInitialize()
         {
-            DBDataHelper.ConnectionString = @"Data Source = .\SQLEXPRESS;";
+            DBDataHelper.ConnectionString = @"Data Source = .\TestDatabase;";
 
             dbdatahelperObject = new DBDataHelper();
         }

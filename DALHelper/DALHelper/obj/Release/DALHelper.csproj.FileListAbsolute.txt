@@ -1,9 +1,0 @@
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\bin\Release\DALHelper.dll
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\bin\Release\DALHelper.pdb
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\ResolveAssemblyReference.cache
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\DALHelper.rewritten
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\DALHelper.dll
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\DALHelper.pdb
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\Decl\DALHelper.dll
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\Decl\DALHelper.pdb
-C:\Documents and Settings\psing58\Desktop\DALHelper\DALHelper\obj\Release\CodeContractAnalysisRun.log

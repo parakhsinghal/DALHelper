@@ -1,7 +1,8 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
-/*This class is used to do unit testing of all the contracts defined in the DBDataHelper class.
+/*
+ * This class is used to do unit testing of all the contracts defined in the DBDataHelper class.
  * The class derives from the DALHelper.Tests.Base class and uses the setup and teardown methods
  * defined in the base class.
  */
@@ -16,7 +17,7 @@ namespace DALHelper.MSTests
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void ExecSQL_NullSQLStatementProvided_ThrowArgumentNullException()
-        {
+        {            
             try
             {
                 dbdatahelperObject.ExecSQL(null, SQLTextType.Query);
