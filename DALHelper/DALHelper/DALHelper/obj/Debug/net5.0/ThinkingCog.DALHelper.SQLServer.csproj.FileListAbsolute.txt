@@ -9,3 +9,4 @@ C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\Thinking
 C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\ThinkingCog.DALHelper.SQLServer.dll
 C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\ref\ThinkingCog.DALHelper.SQLServer.dll
 C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\ThinkingCog.DALHelper.SQLServer.pdb
+c:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\ThinkingCog.DALHelper.SQLServer.csprojAssemblyReference.cache

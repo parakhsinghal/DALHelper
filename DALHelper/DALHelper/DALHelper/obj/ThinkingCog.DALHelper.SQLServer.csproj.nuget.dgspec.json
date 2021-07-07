@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {}
+    "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {}
   },
   "projects": {
-    "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {
+    "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
+        "projectUniqueName": "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
         "projectName": "ThinkingCog.DALHelper.SQLServer",
-        "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
+        "projectPath": "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
         "packagesPath": "C:\\Users\\Parakh\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\obj\\",
+        "outputPath": "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
