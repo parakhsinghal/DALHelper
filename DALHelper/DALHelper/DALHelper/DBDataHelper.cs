@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
 
-namespace DALHelper
+namespace ThinkingCog.DALHelper.SQLServer
 {
     /// <summary>
     /// The class houses the methods that can be used to pull and push data into 

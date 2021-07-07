@@ -1,4 +1,4 @@
-﻿namespace DALHelper
+﻿namespace ThinkingCog.DALHelper.SQLServer
 {
     /// <summary>
     /// The enum is used to suggest whether the passed sql text is a 

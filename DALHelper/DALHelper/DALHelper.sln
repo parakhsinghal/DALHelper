@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DALHelper.MSTests", "..\DALHelper.MSTests\DALHelper.MSTests.csproj", "{8F575288-8D4E-4FDD-99A1-8E79D4B594D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALHelper", "DALHelper\DALHelper.csproj", "{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkingCog.DALHelper.SQLServer", "DALHelper\ThinkingCog.DALHelper.SQLServer.csproj", "{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

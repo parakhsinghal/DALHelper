@@ -1356,7 +1356,7 @@
           "Microsoft.Data.SqlClient": "3.0.0"
         },
         "runtime": {
-          "DALHelper.dll": {}
+          "ThinkingCog.DALHelper.SQLServer.dll": {}
         }
       }
     }

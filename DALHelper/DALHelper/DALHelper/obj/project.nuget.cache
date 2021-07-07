@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uujhQ0gdIYxoO01WzHcXaxbI7rKMKV3AS7+nPofGsPYptEYEXW7xN7WLzQU7ruK+YtpKbeXiCGNKEZQkO6TPnQ==",
+  "dgSpecHash": "OiV6EsPFpkDqmHZwpM0M7vJzxUiDI8KjLSySNe8PNfu1tBgsISi/P3Ee+RRcek01OCZF2xuQSXKUdaPkk6a8uA==",
   "success": true,
-  "projectFilePath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\DALHelper.csproj",
+  "projectFilePath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Parakh\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Parakh\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

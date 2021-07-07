@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ThinkingCog.DALHelper.SQLServer;
 
 /*
  * This base class does the work of setting up the connection string and 

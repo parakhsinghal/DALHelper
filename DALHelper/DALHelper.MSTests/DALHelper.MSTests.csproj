@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DALHelper\DALHelper\DALHelper.csproj" />
+    <ProjectReference Include="..\DALHelper\DALHelper\ThinkingCog.DALHelper.SQLServer.csproj" />
   </ItemGroup>
 
 </Project>

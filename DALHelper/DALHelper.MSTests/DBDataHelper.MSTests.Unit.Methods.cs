@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using ThinkingCog.DALHelper.SQLServer;
 
 /*
  * This class is used to do unit testing of all the contracts defined in the DBDataHelper class.
