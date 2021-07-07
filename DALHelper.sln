@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkingCog.DALHelper.SQLServer", "DALHelper\ThinkingCog.DALHelper.SQLServer.csproj", "{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DALHelper.MSTests", "DALHelper.MSTests\DALHelper.MSTests.csproj", "{6CDBE426-0769-4BD9-8D2A-E4AC25CD181F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FC08AC-7CF2-4425-8F2A-86DB357C48B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDBE426-0769-4BD9-8D2A-E4AC25CD181F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDBE426-0769-4BD9-8D2A-E4AC25CD181F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDBE426-0769-4BD9-8D2A-E4AC25CD181F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDBE426-0769-4BD9-8D2A-E4AC25CD181F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F6C6BE1-1508-4D48-9054-DF01CF0E3033}
+	EndGlobalSection
+EndGlobal
