@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj": {}
+    "C:\\Work\\GitHub\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj": {}
   },
   "projects": {
-    "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj": {
+    "C:\\Work\\GitHub\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj",
+        "projectUniqueName": "C:\\Work\\GitHub\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj",
         "projectName": "DALHelper.MSTests",
-        "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj",
+        "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj",
         "packagesPath": "C:\\Users\\Parakh\\.nuget\\packages\\",
-        "outputPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper.MSTests\\obj\\",
+        "outputPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper.MSTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {
-                "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj"
+              "C:\\Work\\GitHub\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {
+                "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {
+    "C:\\Work\\GitHub\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
+        "projectUniqueName": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
         "projectName": "ThinkingCog.DALHelper.SQLServer",
-        "projectPath": "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
+        "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\ThinkingCog.DALHelper.SQLServer.csproj",
         "packagesPath": "C:\\Users\\Parakh\\.nuget\\packages\\",
-        "outputPath": "c:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\obj\\",
+        "outputPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

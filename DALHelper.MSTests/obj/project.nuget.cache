@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+UxPqtY9WNToNY+alD42d+0yxCS4vvt5dLwIdraFygwT7Da6BZWz3hhAxZ4vjG3GvPa9zlBPc2UT6rRYMgTtBA==",
+  "dgSpecHash": "uhnEGx3/Lr0DXC8MzJGZzSK6hG88kei4PlmFUO0atGt7kydRjSwEG8azRMs6B7F6LXWGF3M4M7GqwwE5D1c7JA==",
   "success": true,
-  "projectFilePath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj",
+  "projectFilePath": "C:\\Work\\GitHub\\DALHelper\\DALHelper.MSTests\\DALHelper.MSTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Parakh\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Parakh\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

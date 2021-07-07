@@ -1,0 +1,12 @@
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\net5.0\DALHelper.deps.json
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\net5.0\DALHelper.dll
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\net5.0\ref\DALHelper.dll
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\net5.0\DALHelper.pdb
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.AssemblyInfoInputs.cache
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.AssemblyInfo.cs
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.csproj.CoreCompileInputs.cache
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.dll
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\ref\DALHelper.dll
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.pdb
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\net5.0\DALHelper.csprojAssemblyReference.cache

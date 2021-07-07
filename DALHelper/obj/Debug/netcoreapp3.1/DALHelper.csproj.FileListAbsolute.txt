@@ -1,0 +1,8 @@
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\netcoreapp3.1\DALHelper.AssemblyInfoInputs.cache
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\netcoreapp3.1\DALHelper.AssemblyInfo.cs
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\netcoreapp3.1\DALHelper.csproj.CoreCompileInputs.cache
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\netcoreapp3.1\DALHelper.deps.json
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\netcoreapp3.1\DALHelper.dll
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\bin\Debug\netcoreapp3.1\DALHelper.pdb
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\netcoreapp3.1\DALHelper.dll
+C:\Work\GitHub\DALHelper\DALHelper\DALHelper\DALHelper\obj\Debug\netcoreapp3.1\DALHelper.pdb
