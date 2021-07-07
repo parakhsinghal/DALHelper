@@ -87,7 +87,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\DALHelper.csproj",
-        "projectName": "DALHelper",
+        "projectName": "ThinkingCog.DALHelper.SQLServer",
         "projectPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\DALHelper.csproj",
         "packagesPath": "C:\\Users\\Parakh\\.nuget\\packages\\",
         "outputPath": "C:\\Work\\GitHub\\DALHelper\\DALHelper\\DALHelper\\DALHelper\\obj\\",
@@ -122,9 +122,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "System.Data.SqlClient": {
+            "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.2, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

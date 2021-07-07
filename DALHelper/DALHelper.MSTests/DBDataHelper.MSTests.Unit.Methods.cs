@@ -29,14 +29,14 @@ namespace DALHelper.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void ExecSQL_ZeroLengthSQLStatementProvided_ThrowArgumentException()
         {
             try
             {
                 dbdatahelperObject.ExecSQL("", SQLTextType.Query);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentNullException ex)
             {
                 throw ex;
             }
@@ -57,14 +57,14 @@ namespace DALHelper.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetRowsAffected_ZeroLengthSQLStatementProvided_ThrowArgumentException()
         {
             try
             {
                 dbdatahelperObject.GetRowsAffected("", SQLTextType.Query);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentNullException ex)
             {
                 throw ex;
             }
@@ -85,14 +85,14 @@ namespace DALHelper.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetDataTable_ZeroLengthSQLStatementProvided_ThrowArgumentException()
         {
             try
             {
                 dbdatahelperObject.GetDataTable("", SQLTextType.Query);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentNullException ex)
             {
                 throw ex;
             }
@@ -113,14 +113,14 @@ namespace DALHelper.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetDataView_ZeroLengthSQLStatementProvided_ThrowArgumentException()
         {
             try
             {
                 dbdatahelperObject.GetDataView("", SQLTextType.Query);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentNullException ex)
             {
                 throw ex;
             }
@@ -141,14 +141,14 @@ namespace DALHelper.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetDataReader_ZeroLengthSQLStatementProvided_ThrowArgumentException()
         {
             try
             {
                 dbdatahelperObject.GetDataTable("", SQLTextType.Query);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentNullException ex)
             {
                 throw ex;
             }
@@ -169,14 +169,14 @@ namespace DALHelper.MSTests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void GetDataSet_ZeroLengthSQLStatementProvided_ThrowArgumentException()
         {
             try
             {
                 dbdatahelperObject.GetDataTable("", SQLTextType.Query);
             }
-            catch (ArgumentException ex)
+            catch (ArgumentNullException ex)
             {
                 throw ex;
             }

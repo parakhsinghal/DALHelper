@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
 
@@ -64,10 +64,14 @@ namespace DALHelper
         /// <returns>Returns a open connection to the database.</returns>
         private SqlConnection ConnectToDB()
         {
-            #region Contract
-            Contract.Ensures(Contract.Result<SqlConnection>() != null);
-            Contract.EndContractBlock();
-            #endregion
+            if (ConnectionString == string.Empty || ConnectionString == null || ConnectionString.Length <= 0)
+            {
+                throw new ArgumentNullException("The connection string to the database cannot be null.");
+            }
+            else if (ConnectionString.ToLowerInvariant().Contains("data source") != true)
+            {
+                throw new ArgumentException("The connection string is not having a valid data source. Please pass in a valid connection string.");
+            }
 
             Connection = new SqlConnection(ConnectionString);
             Connection.Open();
@@ -85,18 +89,16 @@ namespace DALHelper
         /// <returns></returns>
         private void InitializeCommand(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.Ensures(Command != null);
-            Contract.EndContractBlock();
-            #endregion
-
             //Pseudocode
             //1. Add the sql query/stored procedure and connection to db.
             //2. See what command type we need to set - text for query and stored proc for sp.
             //3. Add the parameterCollection after checking whether it is empty or not.
             //4. Return the command.
+
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             Command = new SqlCommand(sqlText, ConnectToDB());
             switch (sqlTextType)
@@ -119,15 +121,6 @@ namespace DALHelper
             }
         }
 
-        [ContractInvariantMethod]
-        protected void ObjectInvariant()
-        {
-            #region Contract
-            Contract.Invariant(!String.IsNullOrEmpty(ConnectionString), "Please initialize the connection string before using the helper library");
-            Contract.Invariant(!ConnectionString.ToLower().Contains("data source"), "Please pass in a valid connection string. Data Source is missing from the connection string.");
-            #endregion
-        }
-
         #endregion
 
         #region Non-Async Public Methods
@@ -142,11 +135,10 @@ namespace DALHelper
         /// requires in order to successfully execute.</param>
         public void ExecSQL(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             InitializeCommand(sqlText, sqlTextType, parameterCollection);
             Command.ExecuteNonQuery();
@@ -163,11 +155,10 @@ namespace DALHelper
         /// <returns>Returns the total number of rows affected.</returns>
         public int GetRowsAffected(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             InitializeCommand(sqlText, sqlTextType, parameterCollection);
             return Command.ExecuteNonQuery();
@@ -184,11 +175,10 @@ namespace DALHelper
         /// <returns>Returns a data table containing the result set.</returns>
         public DataTable GetDataTable(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             InitializeCommand(sqlText, sqlTextType, parameterCollection);
             using (DataTable = new DataTable())
@@ -209,11 +199,10 @@ namespace DALHelper
         /// <returns>Returns a data view containing the result set.</returns>
         public DataView GetDataView(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             return GetDataTable(sqlText, sqlTextType, parameterCollection).DefaultView;
         }
@@ -229,11 +218,10 @@ namespace DALHelper
         /// <returns>Returns a data set containing the result set(s).</returns>
         public DataSet GetDataSet(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             InitializeCommand(sqlText, sqlTextType, parameterCollection);
             using (SqlDataAdapter adapter = new SqlDataAdapter(Command))
@@ -258,11 +246,10 @@ namespace DALHelper
         /// requires in order to successfully execute.</param>
         public async Task ExecSQLAsync(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             InitializeCommand(sqlText, sqlTextType, parameterCollection);
             await Command.ExecuteNonQueryAsync();
@@ -279,11 +266,10 @@ namespace DALHelper
         /// <returns>Returns the total number of rows affected.</returns>
         public async Task<int> GetRowsAffectedAsync(string sqlText, SQLTextType sqlTextType = SQLTextType.Stored_Proc, List<SqlParameter> parameterCollection = null)
         {
-            #region Contract
-            Contract.Requires<ArgumentNullException>(sqlText != null, "The sql query text cannot be null. Please provide a valid sql query text.");
-            Contract.Requires<ArgumentException>(sqlText.Length > 0, "Please provide a valid sql query text.");
-            Contract.EndContractBlock();
-            #endregion
+            if (sqlText == null || sqlText == string.Empty)
+            {
+                throw new ArgumentNullException("The provided SQL text should be non-null and non-empty.");
+            }
 
             InitializeCommand(sqlText, sqlTextType, parameterCollection);
             return await Command.ExecuteNonQueryAsync();
